@@ -27,7 +27,7 @@ module FriendlyId
     end
 
     def last_in_sequence
-      @_last_in_sequence ||= extract_sequence_from_slug(conflict.to_param)
+      @_last_in_sequence ||= extract_sequence_from_slug(conflict.slug)
     end
 
     def extract_sequence_from_slug(slug)
